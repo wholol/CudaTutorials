@@ -66,7 +66,6 @@ int main()
 	cudaMalloc(&a_device, bytes);
 	cudaMalloc(&b_device, bytes);
 	cudaMalloc(&c_device, bytes);
-
 	cudaMemcpy(a_device, a_host, bytes, cudaMemcpyHostToDevice);
 	cudaMemcpy(b_device, b_host, bytes, cudaMemcpyHostToDevice);
 
